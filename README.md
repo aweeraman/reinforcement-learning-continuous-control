@@ -78,6 +78,8 @@ To run the trained agent:
 $ python reacher.py
 ```
 
+![Running agent](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/running_agent.png)
+
 # Troubleshooting Tips
 
 If you run into an error such as the following when training the agent:
