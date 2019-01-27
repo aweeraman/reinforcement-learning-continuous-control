@@ -9,7 +9,17 @@ to perform this activity to achieve an average score of +30 from over 100 consec
 
 ## Learning algorithm
 
-TBD
+For this project, the Deep Deterministic Policy Gradient (DDPG) algorithm was used to train the agent.
+
+Deep Deterministic Policy Gradient (DDPG) is an algorithm which concurrently learns a Q-function and a policy.
+It uses off-policy data and the Bellman equation to learn the Q-function, and uses the Q-function to learn the policy.
+
+This approach is closely connected to Q-learning, and is motivated the same way.
+
+Some characteristics of DDPG:
+* DDPG is an off-policy algorithm.
+* DDPG can only be used for environments with continuous action spaces.
+* DDPG can be thought of as being deep Q-learning for continuous action spaces.
 
 ## Model architecture and hyperparameters
 
@@ -56,4 +66,4 @@ Below is a training run of the above model archicture and hyperparameters:
 
 ## Reference
 
-TBD
+1 - https://spinningup.openai.com/en/latest/algorithms/ddpg.html
