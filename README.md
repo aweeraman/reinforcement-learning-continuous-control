@@ -15,8 +15,8 @@ $ git clone https://github.com/aweeraman/reinforcement-learning-continuous-contr
 Using the Anaconda distribution, create a new python runtime and install the required dependencies:
 
 ```
-$ conda create -n dqn python=3.6
-$ source activate dqn
+$ conda create -n rl python=3.6
+$ source activate rl
 $ pip install -r requirements.txt
 ```
 
@@ -68,26 +68,6 @@ Episode: 	203 	Score: 	38.75 	Average Score: 	30.21
 Environment solved in 103 episodes!	Average Score: 30.21
 ```
 ![Plot of rewards](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/graph.png)
-
-## 5. Run the agent
-
-To run the pre-trained agent, execute the following:
-
-```
-$ python reacher.py --run
-TBD
-```
-
-To customize hyperparameters and train the agent, execute the following:
-
-```
-$ python reacher.py --train
-TBD
-```
-
-# Environment details
-
-TBD
 
 # Troubleshooting Tips
 
