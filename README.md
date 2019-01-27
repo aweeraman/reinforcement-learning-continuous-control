@@ -1,6 +1,12 @@
 # Udacity Deep Reinforcement Learning Nanodegree Project 2: Continous Control
 
-TBD
+This challenge is a continuous control problem where the agent must reach a moving ball with a double jointed arm. A reward
+of +0.1 is provided for each time step that the arm is in the goal position thus incentivizing the agent to be in contact
+with the ball. The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular
+velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every
+entry in the action vector should be a number between -1 and 1. For the purpose of this project, a single agent is trained
+to perform this activity to achieve an average score of +30 from over 100 consecutive episodes.
+
 
 The steps below will describe how to get this running on MacOS:
 
