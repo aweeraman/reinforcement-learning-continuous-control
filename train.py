@@ -38,26 +38,26 @@ def ddpg(n_episodes=2000, max_t=20000):
 
     for i_episode in range(1, n_episodes+1):
         env_info = env.reset(train_mode=True)[brain_name]      # reset the environment
-        state = env_info.vector_observations[0]                  # get the current state (for each agent)
+        states = env_info.vector_observations                  # get the current state (for each agent)
         agent.reset()
-        score = 0                          # initialize the score (for each agent)
+        scores = np.zeros(num_agents)                          # initialize the score (for each agent)
 
-        for t in range(max_t):
-            action = agent.act(state)
+        while True:
+            action = agent.act(states)
             env_info = env.step(action)[brain_name]
-            next_state = env_info.vector_observations[0]         # get next state (for each agent)
-            reward = env_info.rewards[0]                         # get reward (for each agent)
-            done = env_info.local_done[0]                        # see if episode finished
-            agent.step(state, action, reward, next_state, done)
-            score += reward                         # update the score (for each agent)
-            state = next_state                               # roll over states to next time step
-            if done:                                  # exit loop if episode finished
+            next_states = env_info.vector_observations         # get next state (for each agent)
+            rewards = env_info.rewards                         # get reward (for each agent)
+            dones = env_info.local_done                        # see if episode finished
+            agent.step(states, action, rewards, next_states, dones)
+            scores += rewards                                  # update the score (for each agent)
+            states = next_states                               # roll over states to next time step
+            if np.any(dones):                                  # exit loop if episode finished
                 break
 
-        scores_deque.append(score)
-        total_scores.append(score)
+        scores_deque.append(np.mean(scores))
+        total_scores.append(np.mean(scores))
 
-        print('\rEpisode {}\tAverage Score: {:.2f}'.format(i_episode, np.mean(scores_deque)))
+        print('\rEpisode: \t{} \tScore: \t{:.2f} \tAverage Score: \t{:.2f}'.format(i_episode, np.mean(scores), np.mean(scores_deque)), end="")
 
         if i_episode % 100 == 0:
             torch.save(agent.actor_local.state_dict(), 'checkpoint_actor.pth')
