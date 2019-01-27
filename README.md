@@ -67,7 +67,16 @@ The state for the first agent looks like: [  0.00000000e+00  -4.00000000e+00   0
 Episode: 	203 	Score: 	38.75 	Average Score: 	30.21
 Environment solved in 103 episodes!	Average Score: 30.21
 ```
+
 ![Plot of rewards](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/graph.png)
+
+## 5. Run the trained agent
+
+To run the trained agent:
+
+```
+$ python reacher.py
+```
 
 # Troubleshooting Tips
 
