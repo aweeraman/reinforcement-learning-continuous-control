@@ -51,8 +51,8 @@ Below is a training run of the above model archicture and hyperparameters:
 
 * Training of multiple agents to perform the activity in parallel
 * Explore distributed training using
-** A3C - Asynchronous Advantage Actor-Critic
-** A2C - Advantage Actor Critic
+	* A3C - Asynchronous Advantage Actor-Critic
+	* A2C - Advantage Actor Critic
 
 ## Reference
 
