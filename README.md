@@ -29,7 +29,47 @@ For MacOS, [use this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/R
 
 After uncompressing, there should be a directory called "Reacher.app" in the root directory of the repository.
 
-## 4. Run the agent
+## 4. Train the agent
+
+To train the agent, execute the following:
+
+```
+$ python train.py --run
+INFO:unityagents:
+'Academy' started successfully!
+Unity Academy name: Academy
+        Number of Brains: 1
+        Number of External Brains : 1
+        Lesson number : 0
+        Reset Parameters :
+		goal_size -> 5.0
+		goal_speed -> 1.0
+Unity brain name: ReacherBrain
+        Number of Visual Observations (per agent): 0
+        Vector Observation space type: continuous
+        Vector Observation space size (per agent): 33
+        Number of stacked Vector Observation: 1
+        Vector Action space type: continuous
+        Vector Action space size (per agent): 4
+        Vector Action descriptions: , , , 
+Number of agents: 1
+Size of each action: 4
+There are 1 agents. Each observes a state with length: 33
+The state for the first agent looks like: [  0.00000000e+00  -4.00000000e+00   0.00000000e+00   1.00000000e+00
+  -0.00000000e+00  -0.00000000e+00  -4.37113883e-08   0.00000000e+00
+   0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+   0.00000000e+00   0.00000000e+00  -1.00000000e+01   0.00000000e+00
+   1.00000000e+00  -0.00000000e+00  -0.00000000e+00  -4.37113883e-08
+   0.00000000e+00   0.00000000e+00   0.00000000e+00   0.00000000e+00
+   0.00000000e+00   0.00000000e+00   5.75471878e+00  -1.00000000e+00
+   5.55726671e+00   0.00000000e+00   1.00000000e+00   0.00000000e+00
+  -1.68164849e-01]
+Episode: 	203 	Score: 	38.75 	Average Score: 	30.21
+Environment solved in 103 episodes!	Average Score: 30.21
+```
+![Plot of rewards](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/graph.png)
+
+## 5. Run the agent
 
 To run the pre-trained agent, execute the following:
 
