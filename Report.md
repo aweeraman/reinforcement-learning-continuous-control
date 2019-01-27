@@ -1,6 +1,11 @@
 # Project: Continuous Control
 
-TBD
+This challenge is a continuous control problem where the agent must reach a moving ball with a double jointed arm. A reward
+of +0.1 is provided for each time step that the arm is in the goal position thus incentivizing the agent to be in contact
+with the ball. The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular
+velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every
+entry in the action vector should be a number between -1 and 1. For the purpose of this project, a single agent is trained
+to perform this activity to achieve an average score of +30 from over 100 consecutive episodes.
 
 ## Learning algorithm
 
@@ -36,15 +41,18 @@ WEIGHT_DECAY = 0.0      # L2 weight decay
 
 Below is a training run of the above model archicture and hyperparameters:
 
-Number of agents: 1
-Size of each action: 4
-Environment solved in 203 episodes!	Average Score: 30.21
+* Number of agents: 1
+* Size of each action: 4
+* Environment solved in 103 episodes!	Average Score: 30.21
 
 ![Plot of rewards](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/graph.png)
 
 ## Ideas for future work
 
-TBD
+* Training of multiple agents to perform the activity in parallel
+* Explore distributed training using
+** A3C - Asynchronous Advantage Actor-Critic
+** A2C - Advantage Actor Critic
 
 ## Reference
 
