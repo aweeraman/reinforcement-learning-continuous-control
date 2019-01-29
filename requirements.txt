@@ -1,7 +1,7 @@
 tensorflow==1.7.1
 Pillow>=4.2.1
 matplotlib
-numpy==1.16.0
+numpy>=1.11.0
 jupyter
 pytest>=3.2.2
 docopt
@@ -13,4 +13,4 @@ pandas
 scipy
 ipykernel
 argparse
-unityagents==0.4.0
+unityagents
