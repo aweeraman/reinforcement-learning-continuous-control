@@ -7,6 +7,7 @@ velocities of the arm. Each action is a vector with four numbers, corresponding 
 entry in the action vector should be a number between -1 and 1. For the purpose of this project, a single agent is trained
 to perform this activity to achieve an average score of +30 from over 100 consecutive episodes.
 
+![Running agent](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/images/running_agent.png)
 
 The steps below will describe how to get this running on MacOS:
 
@@ -50,8 +51,6 @@ To run the trained agent:
 ```
 $ python reacher.py
 ```
-
-![Running agent](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/images/running_agent.png)
 
 ## Learning algorithm
 
