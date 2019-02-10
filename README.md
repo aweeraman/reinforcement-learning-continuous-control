@@ -4,8 +4,7 @@ This challenge is a continuous control problem where the agent must reach a movi
 of +0.1 is provided for each time step that the arm is in the goal position thus incentivizing the agent to be in contact
 with the ball. The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular
 velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every
-entry in the action vector should be a number between -1 and 1. For the purpose of this project, a single agent is trained
-to perform this activity to achieve an average score of +30 from over 100 consecutive episodes.
+entry in the action vector should be a number between -1 and 1. For the purpose of this project, a single agent is trained to perform this activity to achieve an average score of +30 from over 100 consecutive episodes.
 
 ![Running agent](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/images/running_agent.png)
 
@@ -32,7 +31,7 @@ $ pip install -r requirements.txt
 Download a pre-built environment to run the agent. You will not need to install Unity for this. The
 environment is OS specific, so the correct version for the operating system must be downloaded.
 
-For MacOS, [use this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
+For MacOS, [use this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
 
 After uncompressing, there should be a directory called "Reacher.app" in the root directory of the repository.
 
