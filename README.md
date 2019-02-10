@@ -6,7 +6,7 @@ with the ball. The observation space consists of 33 variables corresponding to p
 velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every
 entry in the action vector should be a number between -1 and 1. For the purpose of this project, a single agent is trained to perform this activity to achieve an average score of +30 from over 100 consecutive episodes.
 
-![Running agent](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/images/running_agent.png)
+[![Running agent](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/images/running_agent.png)](https://www.youtube.com/watch?v=WwxwolUM2Xo)
 
 The steps below will describe how to get this running on MacOS:
 
@@ -45,11 +45,18 @@ $ python train.py --run
 
 ## 5. Run the trained agent
 
-To run the trained agent:
+To run the trained agent in a multi-agent environment, download and extract the multi-agent version of the
+of the environment from the link below:
+
+For MacOS, [use this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
+
+and run:
 
 ```
 $ python reacher.py
 ```
+
+[![Running multiple agents](https://raw.githubusercontent.com/aweeraman/reinforcement-learning-continuous-control/master/images/running_multiple_agents.png)](https://www.youtube.com/watch?v=WwxwolUM2Xo)
 
 ## Learning algorithm
 
